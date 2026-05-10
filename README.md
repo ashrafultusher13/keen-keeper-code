@@ -7,7 +7,7 @@ KeenKeeper is a friendship management web application that helps users maintain 
 # 🚀 Live Demo
 
 🔗 Live Site: https://your-live-link.com  
-🔗 GitHub Repository: https://github.com/your-username/keenkeeper
+🔗 GitHub Repository:https://github.com/ashrafultusher13/keen-keeper-code.git
 
 ---
 
@@ -41,28 +41,12 @@ KeenKeeper is a friendship management web application that helps users maintain 
 
 ---
 
-# 📂 Folder Structure
-
-```bash
-src/
-│
-├── components/
-├── pages/ or app/
-├── data/
-│   └── friends.json
-├── layouts/
-├── routes/
-├── hooks/
-├── utils/
-└── assets/
-```
-
----
-
 # ⚡ Core Functionalities
 
 ## 👫 Friend Management
+
 Users can view all friends in a responsive card layout with:
+
 - Profile Picture
 - Name
 - Days Since Contact
@@ -70,7 +54,9 @@ Users can view all friends in a responsive card layout with:
 - Dynamic Status
 
 ## 👤 Friend Details
+
 Each friend has a detailed page containing:
+
 - Bio
 - Email
 - Relationship Goal
@@ -78,18 +64,23 @@ Each friend has a detailed page containing:
 - Action Buttons
 
 ## 📜 Timeline System
+
 When users click:
+
 - 📞 Call
 - 💬 Text
 - 🎥 Video
 
 A new timeline entry is automatically added with:
+
 - Current Date
 - Interaction Type
 - Friend Name
 
 ## 📊 Friendship Analytics
+
 Pie chart visualization showing:
+
 - Total Calls
 - Total Texts
 - Total Video Calls
@@ -99,6 +90,7 @@ Pie chart visualization showing:
 # 📱 Responsive Design
 
 The application is optimized for:
+
 - Mobile Devices
 - Tablets
 - Desktop Screens
@@ -136,6 +128,7 @@ npm run dev
 # 🌍 Deployment
 
 This project can be deployed using:
+
 - Vercel
 - Netlify
 
