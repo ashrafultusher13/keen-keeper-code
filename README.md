@@ -125,30 +125,10 @@ npm run dev
 
 ---
 
-# 🌍 Deployment
-
-This project can be deployed using:
-
-- Vercel
-- Netlify
-
-Make sure route reload handling is configured properly after deployment.
-
----
-
-# 🔥 Future Improvements
-
-- Search functionality
-- Timeline sorting
-- Authentication system
-- Database integration
-- Reminder notifications
-
----
 
 # 👨‍💻 Author
 
-Developed by Your Name
+Developed by Tusher
 
 ---
 
