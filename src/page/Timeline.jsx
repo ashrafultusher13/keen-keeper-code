@@ -24,14 +24,14 @@ const Timeline = () => {
       : sortedData.filter((item) => item.action === filter);
 
   return (
-    <div className="bg-base-200 min-h-screen py-16">
-      <div className="container mx-auto max-w-3xl">
+    <div className="bg-base-200 min-h-screen py-16 ">
+      <div className="container mx-auto max-w-5xl px-5">
 
         <h1 className="text-3xl font-bold mb-6">Timeline</h1>
 
   
         <select
-          className="select select-bordered mb-8 "
+          className="select select-bordered mb-8 bg-base-200"
           value={filter}
           onChange={(e) => setFilter(e.target.value)}
         >

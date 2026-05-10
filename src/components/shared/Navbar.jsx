@@ -2,7 +2,7 @@ import { AiOutlineHome } from "react-icons/ai";
 import logoImg from "../../assets/images/logo.png";
 import { TfiStatsUp } from "react-icons/tfi";
 import { RiTimeLine } from "react-icons/ri";
-import { Link, NavLink } from "react-router";
+import {NavLink } from "react-router";
 import { useContext } from "react";
 import { TimelineContext } from "../context/context";
 

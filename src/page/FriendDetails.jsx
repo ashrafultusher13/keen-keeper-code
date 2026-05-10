@@ -120,7 +120,7 @@ const FriendDetails = () => {
             <div className="grid grid-cols-3 gap-4">
               <div className="card bg-base-100 shadow-sm border border-base-300">
                 <div className="card-body items-center text-center py-8">
-                  <p className="text-2xl font-medium">
+                  <p className="text-3xl font-bold">
                     {info.days_since_contact}
                   </p>
                   <p className="text-xs text-base-content/50">
@@ -131,14 +131,14 @@ const FriendDetails = () => {
 
               <div className="card bg-base-100 shadow-sm border border-base-300">
                 <div className="card-body items-center text-center py-8">
-                  <p className="text-2xl font-medium">{info.goal}</p>
+                  <p className="text-3xl font-bold">{info.goal}</p>
                   <p className="text-xs text-base-content/50">Goal (Days)</p>
                 </div>
               </div>
 
               <div className="card bg-base-100 shadow-sm border border-base-300">
                 <div className="card-body items-center text-center py-8">
-                  <p className="text-lg font-semibold text-success">
+                  <p className="text-2xl font-bold">
                     {info.next_due_date
                       ? new Date(info.next_due_date).toLocaleDateString(
                           "en-US",
@@ -159,11 +159,11 @@ const FriendDetails = () => {
             <div className="card bg-base-100 shadow-sm border border-base-300">
               <div className="card-body py-8">
                 <div className="flex justify-between items-center">
-                  <h3 className="font-medium text-sm">Relationship Goal</h3>
+                  <h3 className="font-semibold text-lg">Relationship Goal</h3>
                   <button className="btn btn-xs btn-outline">Edit</button>
                 </div>
-                <p className="text-sm text-base-content/70">
-                  Connect every <strong>{info.goal}</strong> days
+                <p className="text-base-content/70">
+                  Connect every <span className="font-bold text-lg">{info.goal} days</span> 
                 </p>
               </div>
             </div>

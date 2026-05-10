@@ -15,7 +15,7 @@ const Summary = ({fetchFriends}) => {
     <div className="bg-base-200 py-20">
       <div className="container mx-auto text-center">
 
-        <div className="w-8 h-1 bg-blue-500 mx-auto mb-6 rounded"></div>
+        
 
         <h1 className="text-4xl md:text-5xl font-bold text-gray-800">
           Friends to keep close in your life
@@ -30,7 +30,7 @@ const Summary = ({fetchFriends}) => {
         </button>
 
   
-        <div className="w-6 h-1 bg-pink-500 mx-auto mt-4 rounded"></div>
+     
 
     
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-12">
