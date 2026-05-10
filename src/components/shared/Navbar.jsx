@@ -1,4 +1,3 @@
-
 import { AiOutlineHome } from "react-icons/ai";
 import logoImg from "../../assets/images/logo.png";
 import { TfiStatsUp } from "react-icons/tfi";
@@ -40,29 +39,53 @@ const Navbar = () => {
               className="menu menu-sm gap-1.5 dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <Link to="/">Home</Link>
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    `btn btn-ghost flex items-center gap-1 ${isActive ? "text-white bg-[#295943]" : ""}`
+                  }
+                >
+                  Home
+                </NavLink>
               </li>
               <li>
-                <Link to="/timeline">
+                <NavLink
+                  to="/timeline"
+                  className={({ isActive }) =>
+                    `btn btn-ghost flex items-center gap-1 ${isActive ? "text-white bg-[#295943]" : ""}`
+                  }
+                >
                   Timeline{" "}
                   {timelineData.length > 0 && (
                     <span className=" ml-1">{timelineData.length}</span>
                   )}
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/stats">Stats</Link>
+                <NavLink
+                  to="/stats"
+                  className={({ isActive }) =>
+                    `btn btn-ghost flex items-center gap-1 ${isActive ? "text-white bg-[#295943]" : ""}`
+                  }
+                >
+                  Stats
+                </NavLink>
               </li>
             </ul>
           </div>
-          <Link>
+          <NavLink>
             <img src={logoImg} alt="Logo" className="w-32" />
-          </Link>
+          </NavLink>
         </div>
         <div className="navbar-center hidden md:flex">
           <ul className="flex gap-4 text-[#64748B]">
             <li>
-              <NavLink to="/" className="btn btn-ghost flex items-center gap-1">
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  `btn btn-ghost flex items-center gap-1 ${isActive ? "text-white bg-[#295943]" : ""}`
+                }
+              >
                 <AiOutlineHome /> Home
               </NavLink>
             </li>
@@ -70,7 +93,9 @@ const Navbar = () => {
             <li>
               <NavLink
                 to="/timeline"
-                className="btn btn-ghost flex items-center gap-1"
+                className={({ isActive }) =>
+                  `btn btn-ghost flex items-center gap-1 ${isActive ? "text-white bg-[#295943]" : ""}`
+                }
               >
                 <RiTimeLine /> Timeline{" "}
                 {timelineData.length > 0 && (
@@ -82,7 +107,9 @@ const Navbar = () => {
             <li>
               <NavLink
                 to="/stats"
-                className="btn btn-ghost flex items-center gap-1"
+                className={({ isActive }) =>
+                  `btn btn-ghost flex items-center gap-1 ${isActive ? "text-white bg-[#295943]" : ""}`
+                }
               >
                 <TfiStatsUp /> Stats
               </NavLink>
